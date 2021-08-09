@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion comentarios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Titulo principal de la pagina -->
+    <header>
+        <h1 class="Principal">Music For You</h1>
+    </header>
+    <!-- Barra de navegacion -->
+    <nav>
+        <button id="botonCambiar">Menu</button>
+        <ul id="listanav">
+            <li><a href="index.html" class="navbar">Home</a></li>
+            <li><a href="SeccionRap.html" class="navbar">La voz urbana de Buenos Aires</a></li>
+            <li><a href="SeccionRock.html" class="navbar">Actualidad del Rock </a></li>
+            <li><a href="comentarios.html" class="navbar">Comentarios y Contacto</a></li>
+        </ul>
+    </nav>
+
+    <aside class="comentarios">
+
+        <h2>Aqui puede dejar un comentario acerca de los articulos vistos en la pagina y criticas constructivas para
+            mejorar el sitio</h2>
+        <form>
+            <textarea name="comentario" id="comentario" cols="50" rows="10"
+                placeholder="Ingrese su comentario"></textarea>
+        </form>
+        <input type="submit" id="btn-comment">
+
+        <div id="captcha">
+            <!-- CAPTCHA -->
+            <h3>Para comprobar si usted es un humano ingrese la siguiente cadena de caracteres.</h3>
+            <p id="random_string"></p>
+            <input type="email" id="ingresocaptcha">
+            <input type="submit" id="enviar">
+            <p id="mensajecaptcha"> </p>
+
+        </div>
+
+    </aside>
+
+    <div id="tablaDinamica">
+        <h2>Contacte con nosotros si desea comprar instrumentos</h2>
+        <h3>Como somos amantes de la musica queremos que usted tenga la posibilidad de entrar en este mundo por lo que
+            si quiere comprar instrumentos le pedimos que ingrese los instrumentos que desee comprar junto con las
+            caracteristicas de los mismos y nos pondremos en
+            contacto con usted
+        </h3>
+
+        <p><span>Ingrese las caracteristicas en orden segun la tabla para una mejor organización. Gracias</span></p>
+
+        <div id="cargarinfoTabla">
+            <input size="20" id="txtNombre" type="text" placeholder="Ingrese el instrumento">
+            <input size="20" id="txtColor" type="text" placeholder="Ingrese el color">
+            <input size="20" id="txtTipo" type="text" placeholder="Ingrese el tipo">
+            <button id="btn-agregar">Agregar Caracteristicas</button>
+
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del Instrumento</th>
+                    <th>Color</th>
+                    <th>Analogico-Electrico-Acustico</th>
+                </tr>
+            </thead>
+            <tbody id="caractInstrum">
+
+            </tbody>
+
+
+        </table>
+
+            <input type="text" class="editarNombre" placeholder="Ingrese el nuevo Nombre">
+            <input type="text" class="editarColor" placeholder="Ingrese el nuevo Color">
+            <input type="text" class = "editarTipo" placeholder="Ingrese el nuevo Tipo">
+            <button class="btn-confirmEdit">Confirmar Edicion</button>
+
+        <div class="filter">
+            <input type="text" id="filtroNombre" placeholder="Filtrar por Nombre">
+            <input type="text" id="filtroColor" placeholder="Filtrar por Color">
+            <button id="applyFilter">Aplicar Filtro</button>
+            <button id="delFilter">Eliminar Filtro</button>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+
+    <div class="contacto">
+        <h2>CONTACTO</h2>
+        <p>
+            <span> e-Mail: music4you@gmail.com </span>
+        </p>
+        <p>
+            <span> Instagram: music4_you </span>
+        </p>
+        <p>
+            <span> Facebook: Music4You </span>
+        </p>
+
+
+    </div>
+
+
+    <footer class="piedepag">
+        <h2>Music for you, Blog Musical</h2>
+    </footer>
+
+    <script type="text/javascript" src="js/captcha&Form.js"></script>
+    <script src="js/tablaDinamica.js"></script>
+    <script src="js/barraMobile.js"></script>
+</body>
+
+</html>
